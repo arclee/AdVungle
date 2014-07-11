@@ -121,16 +121,14 @@ public class CAdVungle
     	vunglePub.setEventListener(mVungleListener);
     }
 
-   // @Override
-    protected void onPause()
+    public void onPause()
     {       
         vunglePub.onPause();
     }
 
-   // @Override
-    protected void onResume() 
-    {
-    
+ 
+    public void onResume() 
+    {    
         vunglePub.onResume();
     }
 
@@ -162,10 +160,10 @@ public class CAdVungle
 	
 	public void PlayAD(boolean enableBackButton, boolean enableSounds)
 	{
-		final AdConfig overrideConfig = new AdConfig();
-        overrideConfig.setIncentivized(true);
-        overrideConfig.setSoundEnabled(enableSounds);
-        overrideConfig.setBackButtonImmediatelyEnabled(enableBackButton);
+		//final AdConfig overrideConfig = new AdConfig();
+        //overrideConfig.setIncentivized(true);
+        //overrideConfig.setSoundEnabled(enableSounds);
+        //overrideConfig.setBackButtonImmediatelyEnabled(enableBackButton);
        // vunglePub.playAd(overrideConfig);
 
         vunglePub.playAd();		
